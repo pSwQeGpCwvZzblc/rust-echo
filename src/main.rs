@@ -11,6 +11,13 @@ fn main() {
                 .help("Do not print with new line")
                 .takes_value(false),
         )
+        .arg(
+            Arg::with_name("text")
+                .value_name("TEXT")
+                .help("input text")
+                .required(true)
+                .min_values(1),
+        )
         .get_matches();
 
     
